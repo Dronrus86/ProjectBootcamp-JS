@@ -84,18 +84,6 @@ h1 {
   margin-top: 2px;
 }
 
-.plus {
-  font-size: 14px;
-  line-height: 16px;
-  color: white;
-  background-color: #9953f1;
-  border-radius: 71px;
-  box-sizing: border-box;
-  width: 42px;
-  height: 42px;
-  display: block;
-  padding-top: 13px;
-}
 
 .add {
   width: 150px;
@@ -115,6 +103,21 @@ h1 {
   outline: none;
   font-weight: 400;
 }
+
+
+.plus {
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  background-color: #9953f1;
+  border-radius: 71px;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  display: block;
+  padding-top: 13px;
+}
+
 
 .to-do_list {
   clear: both;
