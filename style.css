@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  width: 336px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 250px;
+}
+
+.yellow_content {
+  height: 28px;
+  background-color: #ffdc40;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.main_content {
+  padding: 0 22px 20px 28px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sorting {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+  padding: 0;
+  margin: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.sorting:hover {
+  filter: invert(5);
+  cursor: pointer;
+}
+
+.arrow_sorting img {
+  width: 5px;
+}
+
+.arrow_sorting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3px;
+}
+
+.sorting_triangle {
+  margin-top: -2px;
+  margin-bottom: 0;
+  margin-left: 0;
+  transform: none;
+}
+
+.sorting_lines {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sorting_lines img {
+  margin-top: 2px;
+}
+
+.plus {
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  background-color: #9953f1;
+  border-radius: 71px;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  display: block;
+  padding-top: 13px;
+}
+
+.add {
+  width: 150px;
+  height: 42px;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #833ae0;
+  border: 1px solid #833ae0;
+  box-sizing: border-box;
+  border-radius: 71px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px 0 0;
+  margin: 20px auto 0;
+  outline: none;
+}
+
+.to-do_list {
+  clear: both;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 13px;
+}
+
+.list_points {
+  border: none;
+  outline: none;
+  height: 16px;
+  width: 190px;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: transparent;
+}
+
+.pushbutton_delete {
+  position: relative;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 71px;
+  width: 20px;
+  height: 20px;
+  margin-right: -3px;
+  background-color: transparent;
+}
+
+.pushbutton_delete:hover {
+  cursor: pointer;
+  background-color: #833ae0;
+  border: 1px solid #833ae0;
+}
+
+.pushbutton_delete img {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
