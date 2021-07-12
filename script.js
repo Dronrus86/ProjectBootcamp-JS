@@ -1,8 +1,7 @@
 
-
 const addButton = document.querySelector('.add');
-let todoList = document.querySelector('.to-do_list');
-let options = document.querySelector('.options');
+const todoList = document.querySelector('.to-do_list');
+const options = document.querySelector('.options');
 
 
 function removeElements(rem) {
