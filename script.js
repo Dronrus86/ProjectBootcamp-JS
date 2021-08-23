@@ -8,6 +8,11 @@ const triangle = document.querySelector('.sorting_triangle');
 let inputData = document.querySelector('.list_points');
 let sortButton = document.querySelector('.sorting');
 const plus = document.querySelector('.plus');
+const form = document.querySelector('#form');
+
+form .addEventListener('submit', (event) => {
+  event.preventDefault();
+});
 
 
 function removeElements(rem) {
