@@ -5,9 +5,9 @@ const options = document.querySelector('.options');
 const removeButton = document.querySelector('.pushbutton_delete');
 const arrow = document.querySelector('.sort_arrow');
 const triangle = document.querySelector('.sorting_triangle');
-let inputData = document.querySelector('.list_points');
+//let inputData = document.querySelector('.list_points');
 let sortButton = document.querySelector('.sorting');
-const plus = document.querySelector('.plus');
+//const plus = document.querySelector('.plus');
 const form = document.querySelector('#form');
 
 form .addEventListener('submit', (event) => {
