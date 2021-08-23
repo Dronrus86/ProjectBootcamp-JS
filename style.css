@@ -52,7 +52,7 @@ h1 {
 }
 
 .delete {
-  font-size: 14px;
+  font-size: 12px;
   color: #c4c4c4;
 }
 
@@ -137,4 +137,3 @@ h1 {
 .sort_arrow {
   flex-direction: column;
 }
-
