@@ -5,15 +5,10 @@ const options = document.querySelector('.options');
 const removeButton = document.querySelector('.pushbutton_delete');
 const arrow = document.querySelector('.sort_arrow');
 const triangle = document.querySelector('.sorting_triangle');
-//let inputData = document.querySelector('.list_points');
 let sortButton = document.querySelector('.sorting');
-//const plus = document.querySelector('.plus');
-const form = document.querySelector('#form');
+let form = document.querySelector('.form');
 
-form .addEventListener('submit', (event) => {
-  event.preventDefault();
-});
-     
+
 
 
 function removeElements(rem) {
@@ -25,7 +20,8 @@ function removeElements(rem) {
 
 
 
-addButton.addEventListener('click', () => {
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
     let newElement = document.createElement('div');
     newElement.innerHTML = options.innerHTML;
     newElement.classList.add('options');
@@ -35,8 +31,7 @@ addButton.addEventListener('click', () => {
         removeElements(newElement);
     });
 
-});
-
+       });
 
 removeButton.addEventListener('click', () => {
     removeElements(options);
@@ -99,7 +94,7 @@ sortButton.addEventListener('click', () => {
 
 
 
-
+   
 
 
 
