@@ -1,7 +1,5 @@
 
 const sortingButton = document.getElementById('sorting');
-//const add = document.getElementById('add');
-//const resetButton = document.getElementById('deleteTask');
 const form = document.getElementById('form');
 const plusButton = document.querySelector('.plus');
 const taskRow = document.getElementById('newTask');
