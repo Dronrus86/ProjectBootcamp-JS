@@ -3,8 +3,8 @@ body {
     margin: 0;
 }
 .wrapper {
-     margin-top: 15%;
    
+    margin-top: 15%;
 }
 
 .content {
@@ -15,6 +15,7 @@ body {
     border-radius: 10px;
     box-sizing: border-box;
     margin: auto
+    
 }
 
 .header {
@@ -112,13 +113,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-#add:hover {
-    background: #9953F1;
-}
 
-#add:hover .plus {
-    background: #AA68FE;
-}
 
 .AddButton {
     display: flex;
@@ -163,9 +158,6 @@ h1 {
     cursor: pointer;
 }
 
-.liItem:active {
-    cursor: move;
-}
 
 .spanItem {
     outline: none;
@@ -198,6 +190,4 @@ h1 {
     border: 0;
   }
 
-  .selected {
-    opacity: 0.6;
-  }
+ 

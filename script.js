@@ -6,14 +6,9 @@ const taskRow = document.getElementById('newTask');
 const taskListElement = document.querySelector('.task');
 const ulTaskListElement = document.querySelector('.task ul');
 
-
-
 form.addEventListener('submit', clickAddButton);
 function clickAddButton(event) {
     event.preventDefault();
-    if (taskRow.value.trim() === '' || taskRow.value === null) {
-        return false;
-    } 
     const newLi = document.createElement('li');
     const liSpan = document.createElement('span');
     newLi.classList.add('liItem');
@@ -23,35 +18,18 @@ function clickAddButton(event) {
     newLi.append(liSpan);
     newLi.draggable=true;
     liSpan.contentEditable=true;
-
-
+    
     const newButton = document.createElement('span')
     newButton.innerHTML='&times;';
     newButton.classList.add('liButton');
     newLi.append(newButton);
-    
     taskRow.value='';
     taskListElement.style.display='block';
-    liEditButton();
-    liDeleteButton(newButton);
+    deleteButton(newButton);
 }
 
 
-function liEditButton() {
-    const textfields = document.querySelectorAll('.spanItem'); 
-    for(i=0; i<textfields.length; i++){
-    textfields[i].addEventListener('keypress', function(e) {
-        if (e.shiftKey || e.which === 13) {
-            e.preventDefault();
-          } else if (this.textContent.length >= 25){
-            e.preventDefault();
-            return false;
-        }
-    }, false);
-}}
-
-
-function liDeleteButton(button) {
+function deleteButton(button) {
     button.addEventListener('click', (event) => {
         const liElements = document.querySelectorAll('.liItem');
         if (liElements.length === 1) {
@@ -92,7 +70,6 @@ function liSortingButton() {
         sortingButton.style.background="url('img/Group\ 90.svg') no-repeat";
     }}
 }
-
   function liSortingButtonBack() {
     const liElements = document.querySelectorAll('.liItem');
     if (liElements.length >= 2) {
@@ -106,4 +83,5 @@ function liSortingButton() {
     sortingButton.onmouseout = () => {
         sortingButton.style.background="url('img/Group\ 74.svg') no-repeat";
     }}
+    
 }
